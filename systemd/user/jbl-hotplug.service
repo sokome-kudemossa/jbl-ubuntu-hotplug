@@ -1,0 +1,10 @@
+[Unit]
+Description=Recupera PipeWire e seleciona JBL no hotplug
+After=graphical-session.target pipewire.service wireplumber.service
+
+[Service]
+Type=oneshot
+Environment=LANG=C
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin
+ExecStartPre=/bin/sleep 1
+ExecStart=%h/.local/bin/jbl-hotplug-recover.sh

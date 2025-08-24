@@ -1,0 +1,9 @@
+[Unit]
+Description=Dispara jbl-hotplug.service quando ALSA muda (plug/unplug)
+
+[Path]
+PathChanged=/proc/asound/cards
+Unit=jbl-hotplug.service
+
+[Install]
+WantedBy=default.target
