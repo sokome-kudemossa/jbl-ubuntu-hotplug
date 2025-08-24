@@ -40,7 +40,7 @@ Este projeto automatiza:
    systemctl --user daemon-reload
    systemctl --user enable --now jbl-hotplug.path
 
-   # (opcional) rode uma vez manualmente agora:
+3. (opcional) rode uma vez manualmente agora:
 
    systemctl --user start jbl-hotplug.service
 
